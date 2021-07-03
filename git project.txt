@@ -1,0 +1,122 @@
+
+semib@DESKTOP-B3QVIDM MINGW32 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/semib/.git/
+
+semib@DESKTOP-B3QVIDM MINGW32 ~ (master)
+$ mkdir learn_git_again
+
+semib@DESKTOP-B3QVIDM MINGW32 ~ (master)
+$ cd learn_git_again
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git init
+Initialized empty Git repository in C:/Users/semib/learn_git_again/
+.git/
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ touch third.txt
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/semib/learn_git_a
+gain/.git/
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git add third.txt
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git commit -m'third.txt'
+[master (root-commit) a77e3c7] third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git log
+commit a77e3c714eae230d4eaeb5f87b10cb979da327d3 (HEAD -> master)
+Author: El-Badri <semibadri@yahoo.fr>
+Date:   Sat Jul 3 14:28:01 2021 +0100
+
+    third.txt
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/semib/learn_git_a
+gain/.git/
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ touch fourth.txt
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git add fourth.txt
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git commit -m'adding fourth.txt'
+[master b376775] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git rm third.txt
+rm 'third.txt'
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git add .
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git commit -m'removing third.txt'
+[master d29e51a] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git log
+commit d29e51ad425f500712d1f9b7ab4965d8be97e3b6 (HEAD -> master)
+Author: El-Badri <semibadri@yahoo.fr>
+Date:   Sat Jul 3 15:02:11 2021 +0100
+
+    removing third.txt
+
+commit b37677519d329e585c5f87b8bae463de6e943447
+Author: El-Badri <semibadri@yahoo.fr>
+Date:   Sat Jul 3 14:33:12 2021 +0100
+
+    adding fourth.txt
+
+commit a77e3c714eae230d4eaeb5f87b10cb979da327d3
+Author: El-Badri <semibadri@yahoo.fr>
+Date:   Sat Jul 3 14:28:01 2021 +0100
+
+    third.txt
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git config --global core.pager"cat"
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$ git config --list
+pack.packsizelimit=2g
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw32/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=true
+core.usebuiltinfsmonitor=true
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=El-Badri
+user.email=semibadri@yahoo.fr
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+
+semib@DESKTOP-B3QVIDM MINGW32 ~/learn_git_again (master)
+$
